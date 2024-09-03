@@ -29,6 +29,48 @@
             <section>
                 <h2>Om oss</h2>
             </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post">
+                    <label for="navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Nora Nordman..." id="navn" maxlength="45" required>
+
+                    <label>
+                        E-post
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        emne:
+                        <input type="text" name="emne" placeholder="hva handler det om?" maxlength="60">
+                    </label>
+                    <label>
+                        melding:
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                        <select name="fav">
+                            <option value="pizza">Pizza</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Kebab">Kebab</option>
+                         </select>   
+                    </label>
+                    
+                </form>
+            </section>
         </main>
         <footer>2024 sumayo Alideq</footer>
     </body>
