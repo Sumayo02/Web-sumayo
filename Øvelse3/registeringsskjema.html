@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+        <title>Skjema</title>
+        </head>
+        <main>
+        <form method="post">
+            <label for="navn">Navn:</label>
+            <input type="text" name="navn" placeholder="Ole Nordman..." pattern="[A-Za-zæøåÆØÅ ]{2,}" id="navn" maxlength="45" required>
+
+            <label>
+                E-post:
+                <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            </label>
+            <label>
+                Passord:
+               <input type="password" name="passord" placeholder="passord"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+            </label>
+            <label>
+                Alder:
+                <input type="tall" name="tall" min="18" max="99" maxlength="2" required>
+            </label>
+            <label>
+                Telefonnummer:
+                <input type="telfon" placeholder="Telefonnummer" min="8" max="12" pattern="[0-9]{8,12}" required>
+            </label>
+            <label>
+                Fødselsdato:
+                <input type="">
+            </label>
+
+        </form>
+    </main>
+</html>
